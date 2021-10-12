@@ -1,0 +1,152 @@
+CREATE TABLE table name;
+
+USE database name;
+
+SET SQL_SAFE_UPDATES = 0
+
+DESCRIBE table name
+
+DROP TABLE table name
+
+CREATE TABLE table name(
+column name datatype,
+column name datatype
+)
+
+ALTER TABLE table_name
+ADD COLUMN column_name data_type column_constraint;
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+ALTER TABLE table_name
+ALTER COLUMN column_name SET DATA TYPE data_type;
+
+ALTER TABLE table_name
+RENAME COLUMN current_column_name TO new_column_name;
+
+INSERT INTO table name VALUES()
+
+SELECT column names FROM table name
+
+SELECT * FROM table name
+
+SQL Commands:
+
+CREATE DATABASE database_name 
+USE database_name
+SET SQL_SAFE_UPDATES = 0
+CREATE TABLE table_name
+DELETE FROM table_name WHERE condition
+INSERT INTO table_name VALUES(values)
+UPDATE table_name SET column_name=value WHERE condition 
+DESCRIBE table_name
+ALTER TABLE table_name [ADD or DROP COLUMN] column_name
+DROP TABLE table_name
+
+SELECT * FROM table_name WHERE condition AND condition
+SELECT * FROM table_name WHERE condition OR condition
+SELECT * FROM table_name WHERE condition IN (values)
+SELECT * FROM table_name WHERE condition NOT IN (values)
+SELECT * FROM table_name WHERE column_name BETWEEN value AND value
+SELECT * FROM table_name WHERE column_name LIKE ['string%' or '_string' or '%string_' or '%string_']
+% - any no. of characters 
+_ - a single character
+
+SELECT * FROM table_name WHERE col_name REGEXP 'str1|str2' or 'str' or '[chars]e' or 'str|str$' or '^str|str' or 'char[chars]'
+
+SELECT * FROM table_name WHERE col_name ISNULL
+
+SELECT * FROM table_name ORDER BY col_name DESC
+SELECT * FROM table_name ORDER BY col1, col2
+SELECT col1, col2 AS alias_name FROM table_name ORDER BY col3
+SELECT * FROM table_name WHERE condition ORDER BY col_name DESC
+
+SELECT * FROM table_name LIMIT number_of_records
+SELECT * FROM table_name LIMIT no_of_records to skip, no_of_records to return
+SELECT * FROM table_name ORDER BY col_name DESC LIMIT no_of_records
+
+JOINS:
+
+SELECT col_names FROM table1 JOIN table2 ON condition
+SELECT col_names FROM table1 alias JOIN table2 alias ON condition
+
+JOIN TABLES ACCROSS DATABASES:
+
+SELECT * FROM table JOIN database.table ON condition
+
+SELF JOINS:
+
+SELECT * FROM table a JOIN table b ON a.col = b.col
+
+JOINING MULTIPLE TABLES:
+
+SELECT * FROM table1 JOIN table2 ON condition JOIN table3 ON condition
+
+COMPOUND JOIN CONDITIONS - COMPOSITE PRIMARY KEY:
+
+SELECT * FROM table1 JOIN table2 ON condition1 AND condition2
+
+OUTER JOINS:
+
+SELECT * FROM table1 LEFT JOIN table2 ON condition
+
+USING clause:
+
+SELECT * FROM table1 JOIN table2 USING(col_name)
+
+NATURAL JOIN:
+
+SELECT * FROM table1 NATURAL JOIN table2
+
+CROSS JOIN:
+
+SELECT columns FROM table1 CROSS JOIN table2 = SELECT columns FROM table1, table2
+
+UNIONS:
+
+SELECT columns FROM table WHERE condition
+UNION
+SELECT columns FROM table WHERE condition
+ORDER BY condition
+
+INSERT:
+
+INSERT INTO table_name (columns) VALUES (col_values1), (col_values2), (col_values3)
+
+CREATING VIEWS:
+
+CREATE VIEW view_name AS SELECT * FROM table_name;
+SELECT * FROM view_name;
+
+DELETING VIEWS:
+
+DROP view_name
+
+DELETING COLUMNS:
+ALTER TABLE table_name DROP column_name
+
+ADDING COLUMNS:
+ALTER TABLE table_name ADD column_name datatype AFTER column_name
+
+INSERTING HIERARCHICAL ROWS:
+
+CREATING A COPY OF A TABLE:
+CREATE TABLE table_name AS 
+SELECT * FROM table1 WHERE condition
+
+UPDATING A SINGLE ROW:
+UPDATE table_name SET col1, col2 WHERE condition
+
+UPDATING MULTIPLE COLUMNS:
+
+USING SUBQUERIES IN UPDATES:
+
+DELETING ROWS:
+DELETE FROM table_name WHERE condition
+
+
+
+
+
+
