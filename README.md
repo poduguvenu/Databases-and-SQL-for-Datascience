@@ -6,3 +6,5 @@
 5. Sub Queries and Nested SELECTs
 6. Working with Multiple Tables using Sub-Queries and Implicit Join
 7. Connect to Db2 database on Cloud using Python
+8. Access DB2 on Cloud using Python
+9. 
