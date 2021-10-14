@@ -15,3 +15,5 @@
 14. Stored Procedure - SELECT
 15. Stored Procedure - UPDATE
 16. Transactions
+17. Joins
+18. 
