@@ -9,4 +9,5 @@
 8. Access DB2 on Cloud using Python
 9. Accessing Databases with SQL Magic
 10. Analyzing a real world data-set with SQL and Python
-11. 
+11. Working with a real world data-set using SQL and Python
+12. 
