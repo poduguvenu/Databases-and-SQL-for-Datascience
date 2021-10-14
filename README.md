@@ -10,4 +10,4 @@
 9. Accessing Databases with SQL Magic
 10. Analyzing a real world data-set with SQL and Python
 11. Working with a real world data-set using SQL and Python
-12. 
+12. Assignment on City Of Chicago Analysis
