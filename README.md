@@ -12,3 +12,5 @@
 11. Working with a real world data-set using SQL and Python
 12. Assignment on City Of Chicago Analysis
 13. Using Views
+14. Stored Procedure - SELECT
+15. Stored Procedure - UPDATE
